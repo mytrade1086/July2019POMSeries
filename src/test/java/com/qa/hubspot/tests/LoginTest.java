@@ -24,7 +24,7 @@ public class LoginTest {
 	LoginPage loginPage;
 
 	@BeforeMethod
-	public void setUp() {
+	public   void setUp() {
 		basePage = new BasePage();
 		prop = basePage.initialize_properties();
 		driver = basePage.initialize_driver(prop);

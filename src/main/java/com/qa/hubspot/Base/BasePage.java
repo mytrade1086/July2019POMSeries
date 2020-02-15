@@ -39,7 +39,11 @@ public class BasePage {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			//WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver", "/Users/NaveenKhunteta/Downloads/chromedriver");
+			//System.setProperty("webdriver.chrome.driver", "/Users/NaveenKhunteta/Downloads/chromedriver");
+			
+			System.setProperty("webdriver.chrome.driver","H://chromedriver_win32//chromedriver.exe");
+			
+			
 			if (headless.equalsIgnoreCase("yes")) {
 				ChromeOptions co = new ChromeOptions();
 				co.addArguments("--headless");
